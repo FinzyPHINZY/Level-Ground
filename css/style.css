@@ -310,6 +310,12 @@ hr {
   font-weight: 800;
   font-size: 1.5em;
 } 
+
+@media screen and (max-width: 300px) {
+	* {
+		width: 100%;
+	}
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
