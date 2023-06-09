@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.container {
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(../images/foodsense.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 1rem .5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    font-weight: 800;
+    color: rgb(31,33,20);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1.5rem 0 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(171,163,146);
+    background-color: rgb(31,33,20);
+    padding: .5rem 1rem;
+}
+
+nav a:hover,
+nav a:active {
+    background: rgb(171,163,146);
+    color: rgb(31,33,20);
+}
+
+.header-content {
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.header-content .title {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: rgb(210, 208, 203);
+    font-size: 3rem;
+}
+
+.header-content .h-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-first,
+.section-third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 14rem;
+}
+
+.section-first h2,
+.section-third h2 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.section-second {
+    background: rgb(219,223,226);
+    text-align: center;
+    padding: 3rem;
+}
+
+.section-second-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    width: 40%;
+}
+
+.box img {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.box h3 {
+    text-transform: uppercase;
+    margin: 2rem 0 1.5rem;
+}
+
+.box p {
+    margin-bottom: 2rem;
+}
+
+.box a {
+    text-decoration: none;
+    color: initial;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+}
+
+.box a:hover,
+.box a:active,
+.section-third a:hover,
+.section-third a:active {
+    background-color: black;
+    color: rgb(219,223,226);
+}
+
+.section-third p {
+    margin-bottom: 2rem;
+}
+
+.section-third a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: initial;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+}
+
+footer {
+    background-color: rgb(22,31,42);
+    padding: 3rem ;
+}
+
+.footer-flex {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+}
+
+footer h2 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin-bottom: 1.5rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+footer ul li {
+    margin: 0 2rem;
+}
+
+footer ul a {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid magenta;
+    padding: 1rem 2rem;
+}
+
+footer ul a:hover,
+footer ul a:active {
+    color: rgb(22,31,42);
+    background: white;
+}
+
+
+@media (max-width: 768px) {
+    .section-first,
+    .section-third {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li {
+        margin: 1.5rem;
+    }
+}
+
+@media (max-width: 599px) {
+    .section-second-flex{
+        flex-direction: column;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .fix {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-content .title {
+        font-size: 2rem;
+    }
+
+    .header-content .h-subtitle {
+        font-size: 1rem;
+    }
+}
